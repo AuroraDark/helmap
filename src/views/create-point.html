@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+
+{% set pageId = "page-create-point" %}
+
+{% block title %}
+    <title>Cadastrar Posto</title>
+{% endblock title %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+{% endblock styles %}
+
+{% block content %}
+
+    {% include "partials/page-header.html" %}
+
+    <form action="/savepoint" method="POST">
+        <h1>Cadastro do Posto de Saúde</h1>
+        <fieldset>
+            <legend>
+                <h2>Dados da entidade</h2>
+            </legend>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="name">Nome da entidade</label>
+                    <input type="text" name="name" required="required">
+                </div>
+                <div class="field">
+                    <label for="name">Imagem da entidade</label>
+                    <input 
+                        type="url"
+                        name="image"
+                        placeholder="ex: http://myimage.com" 
+                        required="required">
+                </div>
+            </div>
+
+            <div class="field-group">
+                <div class="field">
+                    <label for="address">Endereço</label>
+                    <input type="text" name="address" required="required">
+                </div>
+                <div class="field">
+                    <label for="address2">Número</label>
+                    <input type="text" name="address2" required="required">
+                </div>
+            </div>
+            <div class="field-group">
+                <div class="field">
+                    <label for="state">Estado</label>
+                    <select name="uf">
+                        <option value="">Selecione o estado</option>
+                    </select>
+
+                    <input type="hidden" name="state" required="required">
+                </div>
+                <div class="field">
+                    <label for="city">Cidade</label>
+                    <select name="city" id="" disabled="disabled" required="required">
+                        <option value="">Selecione a cidade</option>
+                    </select>
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit">Cadastrar posto de saúde</button>
+    </form>
+
+{% endblock content %}
+
+{% block modal %}
+    {% if saved %}
+        {%include "partials/point-created.html"%}
+    {% endif %}
+{% endblock modal %}
+
+
+{% block scripts %}
+    <script src="/scripts/create-point.js"></script>
+{% endblock scripts %}
