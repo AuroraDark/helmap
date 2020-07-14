@@ -64,6 +64,13 @@ main .cards {
     gap: 24px;
 }
 
+main .card {
+    background-color:white;
+    box-shadow: 5px 10px 10px #0005;
+    padding: 10px;
+    border-radius: 8px;
+}
+
 main .card img {
     width: 100%;
     height: 150px;
