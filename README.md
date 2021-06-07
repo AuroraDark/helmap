@@ -1,4 +1,6 @@
-# Helmap (Baseado no site Ecoleta feito nas aulas da NLW da Rocketseat)
+# Helmap
+
+## Encontre os postos de saúde mais próximos da sua localidade!
 
 ### Funcionalidades trabalhadas
 
@@ -16,17 +18,16 @@
 ![desktop6](public/assets/helpmap6.png)
 
 
-### Linguagens e tecnologia
+### Linguagens e tecnologias
 
-* Front-end: HTML5, CSS e Javascript - 
-https://www.notion.so/Front-end-7c8a1a9a6df547058f1473f899a3b9c4
+* *Front-end:* HTML5, CSS e Javascript
 
-* Back-end: Javascript, Node.js, Template Engine: NunJucks e Banco de dados: SQLite - 
-https://www.notion.so/Back-end-a5747fd6bfa34e799e6e0ded51f5ec63
+* *Back-end:* Javascript, Node.js, Template Engine: NunJucks e Banco de dados: SQLite 
+
 
 ### Rocketseat
 
-O link do site pra quem tiver interesse em participar de outros projetos: 
+Inspirado no projeto Ecoleta trabalhado no bootcamp da Rocketseat 
 https://rocketseat.com.br
 
 #boracodar :)
